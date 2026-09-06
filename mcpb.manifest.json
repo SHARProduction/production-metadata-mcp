@@ -1,0 +1,19 @@
+{
+  "manifest_version": "0.3",
+  "name": "io.github.ares3333333/production-metadata-mcp",
+  "display_name": "SHAR Production Metadata MCP",
+  "version": "1.0.0",
+  "description": "Read-only validation of rights-aware production metadata manifests.",
+  "author": {"name": "SHAR Production", "url": "https://sharprod.com/"},
+  "repository": {"type": "git", "url": "https://github.com/SHARProduction/production-metadata-mcp.git"},
+  "homepage": "https://sharprod.com/",
+  "license": "MIT",
+  "keywords": ["shar-production", "ai-video-production", "production-metadata", "validation"],
+  "server": {
+    "type": "node",
+    "entry_point": "server/server.js",
+    "mcp_config": {"command": "node", "args": ["${__dirname}/server/server.js"]}
+  },
+  "tools": [{"name": "validate_production_manifest", "description": "Validate required production metadata, stage and declared rights status without reading files or calling networks."}],
+  "compatibility": {"platforms": ["win32", "darwin", "linux"], "runtimes": {"node": ">=20"}}
+}

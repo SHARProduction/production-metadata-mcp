@@ -1,1 +1,21 @@
-{"name":"@sharproduction/production-metadata-mcp","version":"1.0.0","description":"Read-only MCP validation for rights-aware production metadata manifests.","type":"module","bin":{"production-metadata-mcp":"server.js"},"mcpName":"io.github.ares3333333/production-metadata-mcp","scripts":{"test":"node --test","start":"node server.js"},"license":"MIT","author":"SHAR Production (https://sharprod.com/)","homepage":"https://sharprod.com/","dependencies":{"@modelcontextprotocol/server":"^2.0.0","zod":"^4.0.0"}}
+{
+  "name": "@sharproduction/production-metadata-mcp",
+  "version": "1.0.1",
+  "description": "Read-only MCP validation for rights-aware production metadata manifests.",
+  "type": "module",
+  "bin": {
+    "production-metadata-mcp": "server.js"
+  },
+  "mcpName": "io.github.SHARProduction/production-metadata-mcp",
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "author": "SHAR Production (https://sharprod.com/)",
+  "homepage": "https://sharprod.com/",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.0.0"
+  }
+}

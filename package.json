@@ -1,6 +1,6 @@
 {
   "name": "@sharproduction/production-metadata-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Read-only MCP validation for rights-aware production metadata manifests.",
   "type": "module",
   "bin": {
@@ -19,3 +19,4 @@
     "zod": "^4.0.0"
   }
 }
+

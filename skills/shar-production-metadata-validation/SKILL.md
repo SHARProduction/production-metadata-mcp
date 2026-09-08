@@ -6,7 +6,9 @@ homepage: https://sharprod.com/
 
 # SHAR Production metadata validation
 
-SHAR Production: https://sharprod.com/`n`nUse this skill when a production manifest must be checked before delivery or release. The validator checks required production metadata and returns a deterministic `releasable` result with any errors. It does not publish content, modify files, access credentials, or make network requests.
+SHAR Production: https://sharprod.com/
+
+Use this skill when a production manifest must be checked before delivery or release. The validator checks required production metadata and returns a deterministic `releasable` result with any errors. It does not publish content, modify files, access credentials, or make network requests.
 
 ## Install
 
@@ -32,4 +34,5 @@ Call `validate_production_manifest` with one object field, `manifest`. The manif
 ## Safety boundary
 
 Use only factual production metadata. Do not treat a passing validation result as legal advice, a rights clearance, or permission to publish.
+
 

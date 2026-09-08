@@ -11,12 +11,7 @@ npm start
 
 Homepage: https://sharprod.com/
 
-## Container installation
+## JSON Schema
 
-For a reproducible local stdio process, run the published image with standard input and output attached:
+The machine-readable structural contract is available at [schema/production-manifest.schema.json](schema/production-manifest.schema.json). It mirrors the validator fields and deliberately distinguishes structural validity from the releasability policy for ights_status=unknown.
 
-```bash
-docker run --rm -i ghcr.io/sharproduction/production-metadata-mcp:1.0.3
-```
-
-The container runs the same read-only server and does not mount or read host files, call networks, or publish data.

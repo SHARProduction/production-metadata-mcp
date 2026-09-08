@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/SHARProduction/production-metadata-mcp/main/schema/production-manifest.schema.json",
+  "title": "SHAR Production Metadata Manifest",
+  "description": "Structural metadata contract for rights-aware AI-hybrid video-production work. A manifest with rights_status=unknown is structurally valid but is not releasable under the SHAR Production validator.",
+  "type": "object",
+  "required": ["title", "project", "stage", "rights_status"],
+  "properties": {
+    "title": { "type": "string", "minLength": 1, "description": "Production asset or delivery title." },
+    "project": { "type": "string", "minLength": 1, "description": "Production project identifier or name." },
+    "stage": { "type": "string", "enum": ["preproduction", "production", "postproduction", "delivery"] },
+    "rights_status": { "type": "string", "enum": ["cleared", "licensed", "synthetic", "unknown"], "description": "Rights state. unknown is blocked by the releasability policy." }
+  },
+  "additionalProperties": true
+}

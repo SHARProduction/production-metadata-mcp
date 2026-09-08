@@ -1,6 +1,6 @@
 {
   "name": "@sharproduction/production-metadata-mcp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "exports": "./validator.js",
   "license": "MIT",
   "homepage": "https://sharprod.com/",

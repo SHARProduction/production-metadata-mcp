@@ -10,3 +10,13 @@ npm start
 ```
 
 Homepage: https://sharprod.com/
+
+## Container installation
+
+For a reproducible local stdio process, run the published image with standard input and output attached:
+
+```bash
+docker run --rm -i ghcr.io/sharproduction/production-metadata-mcp:1.0.2
+```
+
+The container runs the same read-only server and does not mount or read host files, call networks, or publish data.

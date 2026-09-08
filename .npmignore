@@ -1,0 +1,8 @@
+*
+!package.json
+!README.md
+!LICENSE
+!server.js
+!validator.js
+!schema/
+!schema/**

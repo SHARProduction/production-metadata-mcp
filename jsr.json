@@ -1,9 +1,8 @@
 {
   "name": "@sharproduction/production-metadata-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "exports": "./validator.js",
   "license": "MIT",
   "homepage": "https://sharprod.com/",
   "description": "SHAR Production read-only MCP metadata validation server and library."
 }
-

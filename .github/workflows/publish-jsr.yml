@@ -2,7 +2,7 @@ name: Publish JSR package
 on:
   push:
     branches: [main]
-    paths: ["server.js", "validator.js", "jsr.json", "package.json", ".github/workflows/publish-jsr.yml"]
+    paths: ["server.js", "validator.js", "jsr.json", "package.json", "package-lock.json"]
 permissions:
   contents: read
   id-token: write

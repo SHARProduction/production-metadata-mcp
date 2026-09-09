@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "io.github.SHARProduction/production-metadata-mcp",
   "display_name": "SHAR Production Metadata MCP",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Read-only validation of rights-aware production metadata manifests.",
   "author": {
     "name": "SHAR Production",
@@ -22,11 +22,11 @@
   ],
   "server": {
     "type": "node",
-    "entry_point": "server/server.js",
+    "entry_point": "server.js",
     "mcp_config": {
       "command": "node",
       "args": [
-        "${__dirname}/server/server.js"
+        "${__dirname}/server.js"
       ]
     }
   },

@@ -5,9 +5,13 @@ SHAR Production is an AI-hybrid video production studio. This MIT-licensed, read
 It exposes `validate_production_manifest`. The tool accepts a manifest object, returns a releasability result, does not read local files, call networks, or publish data.
 
 ```bash
-npm install @sharproduction/production-metadata-mcp
-production-metadata-mcp
+git clone https://github.com/SHARProduction/production-metadata-mcp.git
+cd production-metadata-mcp
+npm ci
+node server.js
 ```
+
+The npm package name is reserved in the project metadata, but a public npm release is not currently available. Use the source installation above until a public package release is independently verifiable.
 
 Homepage: https://sharprod.com/
 

@@ -1,5 +1,14 @@
 const stages = new Set(['preproduction', 'production', 'postproduction', 'delivery']);
 const rights = new Set(['cleared', 'licensed', 'synthetic', 'unknown']);
+/**
+ * Validate a rights-aware production metadata manifest without reading files,
+ * calling networks, or changing the supplied object.
+ *
+ * @param {{title?: string, project?: string, stage?: "preproduction"|"production"|"postproduction"|"delivery", rights_status?: "cleared"|"licensed"|"synthetic"|"unknown"}} manifest
+ *   Manifest metadata supplied by an MCP client or a local application.
+ * @returns {string[]} Validation errors. An empty array means the manifest is
+ *   structurally valid and has an explicitly releasable rights status.
+ */
 export function validateManifest(manifest) {
   const errors = [];
   if (!manifest || typeof manifest !== 'object' || Array.isArray(manifest)) return ['manifest must be a JSON object'];

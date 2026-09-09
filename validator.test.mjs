@@ -46,7 +46,7 @@ test('serves MCP initialize over stdio', async () => {
     assert.equal(initialized.jsonrpc, '2.0');
     assert.equal(initialized.id, 1);
     assert.equal(initialized.result.serverInfo.name, 'SHAR Production Metadata MCP');
-    assert.equal(initialized.result.serverInfo.version, '1.0.4');
+    assert.equal(initialized.result.serverInfo.version, '1.0.5');
     assert.ok(initialized.result.capabilities.tools);
   } finally {
     child.kill();

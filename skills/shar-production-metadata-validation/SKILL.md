@@ -2,6 +2,10 @@
 name: shar-production-metadata-validation
 description: Validate rights-aware AI-hybrid video-production metadata with SHAR Production's local read-only MCP tool.
 homepage: https://sharprod.com/
+version: 1.0.0
+license: MIT
+author: SHARProduction
+source_url: https://github.com/SHARProduction/production-metadata-mcp
 ---
 
 # SHAR Production metadata validation

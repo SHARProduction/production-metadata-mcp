@@ -15,7 +15,7 @@
   "author": "SHAR Production (https://sharprod.com/)",
   "homepage": "https://sharprod.com/",
   "dependencies": {
-    "@modelcontextprotocol/server": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.4.0",
     "zod": "^4.0.0"
   }
 }
